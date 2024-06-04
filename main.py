@@ -22,7 +22,7 @@ def isVolumeUnused(volume_id: str) -> bool:
     return True
 
 
-@aiocron.crontab('* * * * *')
+@aiocron.crontab('*/15 * * * *')
 async def cleanup():
     images = client.images.list()
     for image in images:
