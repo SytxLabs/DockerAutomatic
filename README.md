@@ -4,5 +4,5 @@
 Python3.10 or higher
 
 ```bash
-pip install docker
+pip install docker aiocron
 ```
